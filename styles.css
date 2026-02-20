@@ -321,12 +321,12 @@ header.scrolled {
 /* Gallery Styling */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 .gallery-item {
-    height: 500px;
+    height: 350px;
     border-radius: var(--radius);
     overflow: hidden;
     position: relative;
