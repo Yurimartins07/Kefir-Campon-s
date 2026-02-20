@@ -1,18 +1,18 @@
 :root {
-    /* Color Palette - Modern Rustic */
-    --primary: #ffb400;
-    /* Harvest Gold */
-    --primary-dark: #e6a200;
-    --secondary: #2d4a22;
-    /* Forest Green */
-    --bg-deep: #0f1710;
-    /* Deep Forest */
-    --bg-surface: #1a241c;
-    /* Moss Grey */
+    /* Color Palette - Vibrant Nature (Green & Yellow) */
+    --primary: #f8d46d;
+    /* Vibrant Yellow */
+    --primary-dark: #e6c150;
+    --secondary: #357245;
+    /* Natural Green */
+    --bg-deep: #1e3a24;
+    /* Dark Green */
+    --bg-surface: #2d5a3a;
+    /* Muted Moss */
     --text-main: #ffffff;
-    --text-muted: #a0a8a1;
-    --accent: #ff6b35;
-    /* Energetic Orange */
+    --text-muted: #d1e2d6;
+    --accent: #ffcc00;
+    /* Sunny Accent */
 
     /* Typography */
     --font-heading: 'Outfit', sans-serif;
