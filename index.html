@@ -1,183 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gourmet Burger Experience</title>
-    <!-- Importing styles -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Importing fonts -->
+    <title>Campones Goomer | Inovação e Tradição no Campo</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Campones Goomer - Unindo a tradição do campo com a inovação tecnológica. Descubra nossos produtos e serviços de alta qualidade.">
+    <meta name="keywords"
+        content="Campones Goomer, agricultura moderna, tecnologia no campo, inovação rural, produtos orgânicos">
+    <meta name="author" content="Campones Goomer">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Montserrat:wght@300;400;600&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
         rel="stylesheet">
-    <!-- Importing icons -->
+
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Importing scripts -->
-    <script defer src="script.js"></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">BURGER<span class="highlight">PRIME</span></div>
-        <ul class="nav-links">
-            <li><a href="#hero">Início</a></li>
-            <li><a href="#ingredients">Nossos Segredos</a></li>
-            <li><a href="#menu">Cardápio</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
+    <!-- Header / Nav -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">CAMPONES<span> GOOMER</span></a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#kefir" class="nav-link">Kefir</a></li>
+                    <li><a href="#services" class="nav-link">Serviços</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <video autoplay muted loop id="hero-video" poster="burger_1.jpg">
-            <source src="hero_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <section id="home" class="hero-section">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="main-title">Viva a <br><span class="text-gradient">Experiência Ultimate</span></h1>
-            <p class="sub-title">Ingredientes frescos. Camadas perfeitas. Sabor inigualável.</p>
-            <div class="cta-group">
-                <a href="#menu" class="btn btn-primary">Peça Agora</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Ingredients Section -->
-    <section id="ingredients" class="ingredients">
         <div class="container">
-            <h2 class="section-title">Our Secret</h2>
-            <div class="ingredients-grid">
-                <div class="ingredient-card hidden">
-                    <div class="icon-box"><i class="fas fa-leaf"></i></div>
-                    <h3>Frescor</h3>
-                    <p>Vegetais direto da horta, alface crocante e tomates maduros colhidos diariamente.</p>
-                </div>
-                <div class="ingredient-card hidden">
-                    <div class="icon-box"><i class="fas fa-bacon"></i></div>
-                    <h3>Crocância</h3>
-                    <p>Bacon perfeitamente defumado e anéis de cebola dourados para aquele "crunch" satisfatório.</p>
-                </div>
-                <div class="ingredient-card hidden">
-                    <div class="icon-box"><i class="fas fa-drumstick-bite"></i></div>
-                    <h3>Premium</h3>
-                    <p>Carne 100% Wagyu e queijos artesanais para um sabor inesquecível.</p>
+            <div class="hero-content">
+                <h1 class="reveal">Inovação que Cultiva o <span class="text-primary">Futuro</span></h1>
+                <p class="reveal">Transformando a tradição do campo com tecnologia de ponta e sustentabilidade para uma
+                    nova geração.</p>
+                <div class="cta-group reveal">
+                    <a href="#about" class="btn btn-primary">Saiba Mais</a>
+                    <a href="#contact" class="btn btn-outline">Começar Agora</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Seção de Lanches -->
-    <section id="menu" class="menu">
+    <!-- About Section -->
+    <section id="about">
         <div class="container">
-            <h2 class="section-title">Nossos Lanches</h2>
-            <div class="menu-grid">
-                <div class="burger-card hidden">
-                    <div class="card-image-wrapper">
-                        <img src="classico_prime.png" alt="O Clássico Prime">
-                    </div>
-                    <div class="card-info">
-                        <h3>O Clássico Prime</h3>
-                        <p>Uma obra-prima atemporal com duplo cheddar, vegetais frescos e molho secreto.</p>
-                        <span class="price">R$ 32,90</span>
-                        <a href="https://wa.me/553172478153?text=Olá!%20Gostaria%20de%20pedir%20o%20lanche:%20O%20Clássico%20Prime"
-                            target="_blank" class="btn btn-sm">Pedir Agora</a>
+            <div class="grid grid-2 align-center">
+                <div class="about-image reveal">
+                    <div class="image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80"
+                            alt="Agricultura Moderna">
                     </div>
                 </div>
-                <div class="burger-card hidden">
-                    <div class="card-image-wrapper">
-                        <img src="smokehouse_deluxe.png" alt="O Smokehouse Deluxe">
-                    </div>
-                    <div class="card-info">
-                        <h3>O Smokehouse Deluxe</h3>
-                        <p>Bacon defumado, cebolas crocantes e molho barbecue em um pão brioche.</p>
-                        <span class="price">R$ 36,90</span>
-                        <a href="https://wa.me/553172478153?text=Olá!%20Gostaria%20de%20pedir%20o%20lanche:%20O%20Smokehouse%20Deluxe"
-                            target="_blank" class="btn btn-sm">Pedir Agora</a>
-                    </div>
-                </div>
-                <div class="burger-card hidden">
-                    <div class="card-image-wrapper">
-                        <img src="inferno_apimentado.png" alt="O Inferno Apimentado">
-                    </div>
-                    <div class="card-info">
-                        <h3>O Inferno Apimentado</h3>
-                        <p>Pimentas jalapeño, queijo pepper jack e nosso molho especial de pimenta fantasma.</p>
-                        <span class="price">R$ 34,90</span>
-                        <a href="https://wa.me/553172478153?text=Olá!%20Gostaria%20de%20pedir%20o%20lanche:%20O%20Inferno%20Apimentado"
-                            target="_blank" class="btn btn-sm">Pedir Agora</a>
-                    </div>
-                </div>
-                <div class="burger-card hidden">
-                    <div class="card-image-wrapper">
-                        <img src="trufado_cogumelos.jpg" alt="Trufado com Cogumelos">
-                    </div>
-                    <div class="card-info">
-                        <h3>Trufado com Cogumelos</h3>
-                        <p>Cogumelos salteados, queijo suíço e aioli de trufas brancas.</p>
-                        <span class="price">R$ 39,90</span>
-                        <a href="https://wa.me/553172478153?text=Olá!%20Gostaria%20de%20pedir%20o%20lanche:%20Trufado%20com%20Cogumelos"
-                            target="_blank" class="btn btn-sm">Pedir Agora</a>
-                    </div>
-                </div>
-                <div class="burger-card hidden">
-                    <div class="card-image-wrapper">
-                        <img src="frango_crocante.jpg" alt="Frango Crocante">
-                    </div>
-                    <div class="card-info">
-                        <h3>Frango Crocante</h3>
-                        <p>Peito de frango empanado dourado com salada coleslaw e picles.</p>
-                        <span class="price">R$ 29,90</span>
-                        <a href="https://wa.me/553172478153?text=Olá!%20Gostaria%20de%20pedir%20o%20lanche:%20Frango%20Crocante"
-                            target="_blank" class="btn btn-sm">Pedir Agora</a>
-                    </div>
-                </div>
-                <div class="burger-card hidden">
-                    <div class="card-image-wrapper">
-                        <img src="vegano_gourmet.jpg" alt="Vegano Gourmet">
-                    </div>
-                    <div class="card-info">
-                        <h3>Vegano Gourmet</h3>
-                        <p>Hambúrguer vegetal, cheddar vegano e abacate no pão sem glúten.</p>
-                        <span class="price">R$ 35,90</span>
-                        <a href="https://wa.me/553172478153?text=Olá!%20Gostaria%20de%20pedir%20o%20lanche:%20Vegano%20Gourmet"
-                            target="_blank" class="btn btn-sm">Pedir Agora</a>
+                <div class="about-text reveal">
+                    <span class="badge">Institucional</span>
+                    <h2>O que é Campones Goomer?</h2>
+                    <p>Mais do que uma marca, somos um ecossistema que conecta o conhecimento ancestral da terra com as
+                        ferramentas tecnológicas mais avançadas do século XXI. Nosso compromisso é com a produtividade
+                        consciente e o progresso rural.</p>
+
+                    <div class="mvm-grid">
+                        <div class="mvm-item">
+                            <i class="fas fa-bullseye"></i>
+                            <div>
+                                <h3>Missão</h3>
+                                <p>Levar eficiência e inovação para o campo de forma acessível.</p>
+                            </div>
+                        </div>
+                        <div class="mvm-item">
+                            <i class="fas fa-eye"></i>
+                            <div>
+                                <h3>Visão</h3>
+                                <p>Ser referência global em transformação digital no agronegócio.</p>
+                            </div>
+                        </div>
+                        <div class="mvm-item">
+                            <i class="fas fa-heart"></i>
+                            <div>
+                                <h3>Valores</h3>
+                                <p>Sustentabilidade, Confiança, Inovação e Transparência.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section id="cta" class="cta-banner">
-        <div class="cta-overlay"></div>
-        <div class="cta-content hidden">
-            <h2>Sinta a Perfeição Hoje</h2>
-            <p>Não espere. Sua experiência gastronômica está a apenas um clique de distância.</p>
-            <a href="#menu" class="btn btn-primary btn-large">Fazer Pedido</a>
+    <!-- Kefir Section (New Feature) -->
+    <section id="kefir" class="bg-surface">
+        <div class="container">
+            <div class="grid grid-2 align-center">
+                <div class="kefir-text reveal">
+                    <span class="badge">Superalimento</span>
+                    <h2>Kefir Camponês: <span class="text-primary">Energia Viva</span></h2>
+                    <p>Descubra o poder nutricional do nosso Kefir, uma bebida milenar fermentada que traz vitalidade e
+                        equilíbrio para o seu corpo. Produzido com o mais puro leite do campo sob rigorosos padrões de
+                        qualidade.</p>
+
+                    <ul class="nutritional-list">
+                        <li><i class="fas fa-check-circle"></i> <strong>Probióticos Poderosos:</strong> Melhora a saúde
+                            intestinal e a digestão.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Imunidade Reforçada:</strong> Rico em vitaminas
+                            e minerais essenciais.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>Fonte de Proteína:</strong> Ideal para uma dieta
+                            equilibrada e nutritiva.</li>
+                        <li><i class="fas fa-check-circle"></i> <strong>100% Natural:</strong> Sem conservantes ou
+                            aditivos químicos.</li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-primary">Quero Experimentar</a>
+                </div>
+                <div class="kefir-image reveal">
+                    <div class="image-wrapper shadow-glow">
+                        <!-- Placeholder for the user's image, assuming they save it as kefir.jpg -->
+                        <img src="kefir.jpg" alt="Kefir Camponês O Superalimento"
+                            onerror="this.src='https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=800&q=80'">
+                        <div class="img-overlay">
+                            <span>O Superalimento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Seção de Contato -->
-    <section id="contact" class="contact">
+    <!-- Services Section -->
+    <section id="services" class="bg-surface">
         <div class="container">
-            <h2 class="section-title">Onde Estamos</h2>
-            <div class="contact-grid">
-                <div class="contact-info hidden">
-                    <h3>Atendimento</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Rua dos Burgers, 123 - Centro</p>
-                    <p><i class="fas fa-clock"></i> Terça a Domingo: 18:00h às 23:30h</p>
-                    <p><i class="fab fa-whatsapp"></i> (31) 7247-8153</p>
-                    <div class="contact-cta">
-                        <a href="https://wa.me/553172478153" target="_blank" class="btn btn-primary">
-                            <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
-                        </a>
+            <div class="section-header reveal">
+                <h2>Serviços & Produtos</h2>
+                <p>Soluções integradas desenhadas para maximizar seus resultados e otimizar cada processo no campo.</p>
+            </div>
+            <div class="grid grid-3">
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-drone"></i></div>
+                    <h3>Monitoramento IoT</h3>
+                    <p>Sensores e drones para análise de solo e clima em tempo real com precisão absoluta.</p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-seedling"></i></div>
+                    <h3>Bio-Tecnologia</h3>
+                    <p>Insumos desenvolvidos em laboratórios de ponta para aumentar a resistência e vigor do cultivo.
+                    </p>
+                </div>
+                <div class="service-card reveal">
+                    <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                    <h3>Consultoria Tech</h3>
+                    <p>Estratégias personalizadas para a digitalização da sua propriedade rural.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Galeria de Projetos</h2>
+                <p>Nossos maiores sucessos e o impacto visual da nossa tecnologia em campo aberto.</p>
+            </div>
+            <div class="gallery-grid reveal">
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&w=600&q=80"
+                        alt="Projeto 1"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1592982537447-6f2a6a0c7c18?auto=format&fit=crop&w=600&q=80"
+                        alt="Projeto 2"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1560493676-04071c5f4b52?auto=format&fit=crop&w=600&q=80"
+                        alt="Projeto 3"></div>
+                <div class="gallery-item"><img
+                        src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=600&q=80"
+                        alt="Projeto 4"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-surface">
+        <div class="container">
+            <div class="contact-wrapper grid grid-2">
+                <div class="contact-info reveal">
+                    <h2>Entre em <span class="text-primary">Contato</span></h2>
+                    <p>Estamos prontos para ouvir seus desafios e propor soluções inovadoras. Fale conosco.</p>
+
+                    <ul class="contact-list">
+                        <li><i class="fas fa-envelope"></i> contato@camponesgoomer.com</li>
+                        <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Polo Tech Rural, KM 45 - SP</li>
+                    </ul>
+
+                    <div class="social-box">
+                        <h3>Siga-nos</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        </div>
                     </div>
+                </div>
+                <div class="contact-form-container reveal">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -185,22 +243,15 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container footer-content">
-            <div class="footer-brand">BURGER<span class="highlight">PRIME</span></div>
-            <p>&copy; 2026 BurgerPrime. Todos os direitos reservados.</p>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">CAMPONES<span> GOOMER</span></div>
+                <p>&copy; 2026 Campones Goomer. Todos os direitos reservados. Inovação Rural.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Botão Flutuante de WhatsApp -->
-    <a href="https://wa.me/553172478153" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
